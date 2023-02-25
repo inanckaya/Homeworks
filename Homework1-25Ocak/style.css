@@ -1,0 +1,174 @@
+*, *::before , *::after {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+.nav {
+    width: 16rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #bd5d38;
+    position: fixed;
+}
+.nav .inside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.nav .avatar {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+.right {
+    width: calc(100% - 18rem);
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    flex-direction: column;
+    margin-left: 16rem;
+
+}
+.container {
+    border-bottom: 1px solid #dbdddf;
+    padding-left: 3rem;
+
+}
+.container .inside {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2rem;
+
+
+}
+li {
+    font-size: 1.5rem;
+    list-style: none;
+    padding-top: 10px;
+    text-decoration: #e1b6a5;
+    color: #e1b6a5;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+h1 {
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1;
+    font-size: 6rem;
+    margin-top: 300px;
+    text-transform: uppercase;
+}
+.sub {
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem !important;
+    padding-top: -25px;
+    padding-bottom: 17px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.text {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-top: -55px;
+}
+.text-primary {
+    --bs-text-opacity: 1;
+}
+a {
+    color: #bd5d38;
+    text-decoration: underline;
+}
+.lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #71757d;
+}
+.flexg {
+    flex-grow: 1 !important;
+}
+.icons {
+    margin-left: 1px;
+    margin-top: 20px;
+}
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    padding-bottom: 5px;
+    margin-bottom: 400px;
+    margin-left: 7px;
+    margin-top: 25px;
+    text-decoration: underline;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+    color: #343a40;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+    color: #343a40;
+}
+.flex-shrink {
+    flex-shrink: 0 !important;
+}
+.flex-md-row {
+    flex-direction: row !important;
+}
+.infoo {
+    width: 1000px;
+    font-size: 22px;
+    color: #959695;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+hr {
+    display: block;
+    width: 100% !important;
+    margin: 0 !important;
+}
+.skills {
+    padding-left: 20px;
+    margin: 0 !important;
+    text-decoration-color: #959695;
+}
+.skill {
+    color: #959695;
+}
+.empty {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+
+}
+.flexf {
+    margin-bottom: 25rem;
+    margin-top: 20rem;
+
+}

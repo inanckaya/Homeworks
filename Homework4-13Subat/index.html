@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostMethod</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+<div>
+    <div class="group">
+        <label>Company Name:</label>
+        <input type="text" id="companyName" />
+    </div>
+    <div class="group">
+        <label>Contact Name:</label>
+        <input type="text" id="contactName" />
+    </div>
+    <div class="group">
+        <label>Contact Title:</label>
+        <input type="text" id="contactTitle" />
+    </div>
+    <div class="group">
+        <label>Street:</label>
+        <input type="text" id="street" />
+    </div>
+
+</div>
+<div>
+    <button onclick="add()">Add</button>
+</div>
+</body>
+<script>
+
+    async function add() {
+        let companyName = document.getElementById('companyName').value;
+        let contactName = document.getElementById('contactName').value;
+        let contactTitle = document.getElementById('contactTitle').value;
+        let street = document.getElementById('street').value;
+
+        fetch('https://northwind.vercel.app/api/suppliers', {
+            method: 'POST',
+            body: JSON.stringify({
+                companyName: companyName,
+                contactName: contactName,
+                contactTitle: contactTitle,
+                address: {
+                    street: street
+                }
+            }),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log('Data ', data);
+            })
+    }
+</script>
+
+</html>

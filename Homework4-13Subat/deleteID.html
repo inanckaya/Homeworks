@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeleteID</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<div>
+    <label>Silinecek ID:</label>
+    <input type="text" id="supplierId" />
+</div>
+<div>
+    <button onclick="deleteSupplierById()">Delete</button>
+</div>
+</body>
+<script>
+    function deleteSupplierById() {
+
+        let id = document.getElementById('supplierId').value;
+
+        fetch('https://northwind.vercel.app/api/suppliers/' + id, {
+            method:'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => {
+                alert('Done!')
+            })
+    }
+
+</script>
+</html>

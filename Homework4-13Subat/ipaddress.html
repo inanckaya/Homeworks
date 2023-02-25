@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Sorgu</title>
+</head>
+<body>
+<label>IP Adresi:</label>
+<input type="text" id="ip">
+
+<button type="button" onclick="query()">Sorgula</button>
+
+<script>
+
+  async function query() {
+    let ip = document.getElementById('ip').value;
+
+    fetch('https://api.collectapi.com/ip/ipToLocation?data.ip=' + ip, {
+      method: 'GET',
+      headers: {
+        'authorization': 'apikey 4ODE1o0BroSp6sQg1D2jG5:07eal4usgDnzS2dRgm3OJW',
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    })
+            .then(res => res.json())
+            .then(data => {
+              console.log('Data ', data);
+            })
+  }
+</script>
+</body>
+</html>
